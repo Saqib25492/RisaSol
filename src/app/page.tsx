@@ -37,7 +37,7 @@ const Index = () => {
                 <div className="flex flex-col sm:flex-row gap-4 animate-fade-in-up animate-delay-700">
                   <Button asChild size="lg" variant="default" className="text-lg px-8 py-6 btn-glow animate-pulse-glow">
                     <Link href="/contact">Schedule a Demo</Link>
-                  </Button>
+                  </Button> 
                   <Button asChild variant="outline" size="lg" className="text-lg px-8 py-6 hover-lift">
                     <Link href="/solutions">View Solutions</Link>
                   </Button>
