@@ -1,6 +1,6 @@
 @import "tailwindcss";
+/* @tailwind components; */
 @tailwind utilities;
-@tailwind components;
 
 @custom-variant dark (&:is(.dark *));
 
@@ -154,7 +154,117 @@
     --sidebar-border: 240 3.7% 15.9%;
     --sidebar-ring: 217.2 91.2% 59.8%;
 }
+@layer utilities {
+  /* Animations */
+  .animate-accordion-down {
+    animation: accordion-down 0.2s ease-out;
+  }
+  
+  .animate-accordion-up {
+    animation: accordion-up 0.2s ease-out;
+  }
+  
+  .animate-fade-in {
+    animation: fade-in 0.6s ease-out;
+  }
+  
+  .animate-fade-in-up {
+    animation: fade-in-up 0.8s ease-out;
+  }
+  
+  .animate-slide-in-left {
+    animation: slide-in-left 0.6s ease-out;
+  }
+  
+  .animate-slide-in-right {
+    animation: slide-in-right 0.6s ease-out;
+  }
+  
+  .animate-scale-in {
+    animation: scale-in 0.4s ease-out;
+  }
+  
+  .animate-bounce-gentle {
+    animation: bounce-gentle 2s ease-in-out infinite;
+  }
+  
+  .animate-pulse-glow {
+    animation: pulse-glow 2s ease-in-out infinite;
+  }
+  
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
 
+  /* Font utilities */
+  .font-inter {
+    font-family: var(--font-inter);
+  }
+  
+  .font-playfair {
+    font-family: var(--font-playfair);
+  }
+  
+  .font-sans {
+    font-family: var(--font-sans);
+  }
+
+  /* Gradient utilities */
+  .bg-gradient-primary {
+    background-image: var(--gradient-primary);
+  }
+  
+  .bg-gradient-secondary {
+    background-image: var(--gradient-secondary);
+  }
+  
+  .bg-gradient-hero {
+    background-image: var(--gradient-hero);
+  }
+  
+  .bg-gradient-subtle {
+    background-image: var(--gradient-subtle);
+  }
+
+  /* Shadow utilities */
+  .shadow-glow {
+    box-shadow: var(--shadow-glow);
+  }
+  
+  .shadow-elegant {
+    box-shadow: var(--shadow-lg);
+  }
+
+  /* Transition utility */
+  .transition-smooth {
+    transition-property: all;
+    transition-timing-function: var(--transition-smooth);
+    transition-duration: 300ms;
+  }
+ .section-padding {
+    @apply py-20 px-4;
+  }
+  .hero-title {
+    @apply text-4xl md:text-6xl lg:text-7xl font-bold leading-tight;
+  }
+  /* Border radius utilities */
+  .rounded-lg {
+    border-radius: var(--radius);
+  }
+  
+  .rounded-md {
+    border-radius: calc(var(--radius) - 2px);
+  }
+  
+  .rounded-sm {
+    border-radius: calc(var(--radius) - 4px);
+  }
+  .glass-effect {
+    @apply bg-white/10 backdrop-blur-md border border-white/20;
+  }
+}
+
+/* Keyframes */
 @keyframes accordion-down {
   from { height: 0; }
   to { height: var(--radix-accordion-content-height); }
@@ -204,8 +314,6 @@
   0%, 100% { transform: translateY(0px); }
   50% { transform: translateY(-10px); }
 }
-
-
 @layer base {
   * {
     @apply border-border outline-ring/50;
@@ -217,95 +325,6 @@
 }
 
 
-@layer utilities {
-  
-
-  
-  /* Animations */
-  .animate-accordion-down {
-    animation: accordion-down 0.2s ease-out;
-  }
-  .animate-accordion-up {
-    animation: accordion-up 0.2s ease-out;
-  }
-  .animate-fade-in {
-    animation: fade-in 0.6s ease-out;
-  }
-  .animate-fade-in-up {
-    animation: fade-in-up 0.8s ease-out;
-  }
-  .animate-slide-in-left {
-    animation: slide-in-left 0.6s ease-out;
-  }
-  .animate-slide-in-right {
-    animation: slide-in-right 0.6s ease-out;
-  }
-  .animate-scale-in {
-    animation: scale-in 0.4s ease-out;
-  }
-  .animate-bounce-gentle {
-    animation: bounce-gentle 2s ease-in-out infinite;
-  }
-  .animate-pulse-glow {
-    animation: pulse-glow 2s ease-in-out infinite;
-  }
-  .animate-float {
-    animation: float 3s ease-in-out infinite;
-  }
-
-
-
-  /* Fonts */
-  .font-inter {
-    font-family: var(--font-inter);
-  }
-  .font-playfair {
-    font-family: var(--font-playfair);
-  }
-  .font-sans {
-    font-family: var(--font-sans);
-  }
-
-  /* Gradients */
-  .bg-gradient-primary {
-    background-image: var(--gradient-primary);
-  }
-  .bg-gradient-secondary {
-    background-image: var(--gradient-secondary);
-  }
-  .bg-gradient-hero {
-    background-image: var(--gradient-hero);
-  }
-  .bg-gradient-subtle {
-    background-image: var(--gradient-subtle);
-  }
-
-  /* Shadows */
-  .shadow-glow {
-    box-shadow: var(--shadow-glow);
-  }
-  .shadow-elegant {
-    box-shadow: var(--shadow-lg);
-  }
-
- 
-
-  /* Transition */
-  .transition-smooth {
-    transition: var(--transition-smooth);
-  }
-
-   .section-padding {
-    @apply py-20 px-4;
-  }
-  
-  
-  .hero-title {
-    @apply text-4xl md:text-6xl lg:text-7xl font-bold leading-tight;
-  }
-  
-
-}
 
 @layer components {
   .section-padding {
@@ -328,7 +347,10 @@
     animation: hover-lift 0.3s ease-out forwards;
   }
 
-
+ .glass-effect {
+    @apply bg-white/10 backdrop-blur-md border border-white/20;
+  }
+  
   
 
 }
