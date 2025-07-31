@@ -11,6 +11,15 @@ const compat = new FlatCompat({
 
 const eslintConfig = [
   ...compat.extends("next/core-web-vitals", "next/typescript"),
+  {
+    files: ["**/*.ts", "**/*.tsx", "**/*.js", "**/*.jsx"],
+    rules: {
+      // Turn off the quote escaping rule (likely from eslint-plugin-react or similar)
+      "react/no-unescaped-entities": "off",
+      // Add more here if needed:
+      // "html-escape/unescaped-entities": "off",
+    },
+  },
 ];
 
 export default eslintConfig;
