@@ -21,7 +21,7 @@ const Contact = () => {
               Get in <span className="text-gradient">Touch</span>
             </h1>
             <p className="text-xl text-muted-foreground mb-8 animate-fade-in-up animate-delay-300">
-              Ready to transform your supply chain? Let's discuss how ChainFlow can help your business grow.
+              Ready to transform your supply chain? Let's discuss how RisaSol can help your business grow.
             </p>
           </div>
         </section>
@@ -133,7 +133,12 @@ const Contact = () => {
                       <Mail className="w-5 h-5 text-primary" />
                       <div>
                         <p className="font-medium">Email</p>
-                        <p className="text-muted-foreground">hello@chainflow.com</p>
+                        <a
+                          href="mailto:ishan.gandhi@risasol.com"
+                          className="text-muted-foreground hover:underline focus:outline-none"
+                        >
+                          ishan.gandhi@risasol.com
+                        </a>
                       </div>
                     </div>
                     <div className="flex items-center space-x-3">
@@ -216,8 +221,8 @@ const Contact = () => {
                   answer: "Yes! We provide comprehensive training for all users, including admin training, end-user workshops, and ongoing support documentation."
                 },
                 {
-                  question: "Can ChainFlow integrate with our existing systems?",
-                  answer: "Absolutely. ChainFlow offers robust API integrations with most ERP, WMS, and e-commerce platforms. Our team will help ensure seamless data flow."
+                  question: "Can RISA Solutions integrate with our existing systems?",
+                  answer: "Absolutely. RISA Solutions offers robust API integrations with most ERP, WMS, and e-commerce platforms. Our team will help ensure seamless data flow."
                 },
                 {
                   question: "What kind of support do you provide?",

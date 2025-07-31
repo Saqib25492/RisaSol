@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { Linkedin, Twitter, Mail } from "lucide-react";
+import Image from "next/image";
 
 const Footer = () => {
   return (
@@ -9,10 +10,14 @@ const Footer = () => {
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Company Info */}
-          <div className="space-y-4">
-            <h3 className="text-2xl font-bold bg-gradient-primary bg-clip-text text-transparent">
-              ChainFlow
-            </h3>
+          <div className="space-y-4I">
+            <Image
+              src="/WhatsApp_Image_2025-07-25_at_6.15.39_PM-removebg-preview.png"
+              alt="RISA Solutions Logo"
+              width={150}
+              height={36}
+              className="object-contain"
+            />
             <p className="text-muted-foreground text-sm">
               Empowering businesses with intelligent supply chain solutions for the modern economy.
             </p>
@@ -101,7 +106,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-border mt-8 pt-8 text-center text-sm text-muted-foreground">
-          <p>&copy; 2024 ChainFlow. All rights reserved.</p>
+          <p>&copy; 2024 RISA Solutions. All rights reserved.</p>
         </div>
       </div>
     </footer>

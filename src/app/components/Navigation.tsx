@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import Image from "next/image";
 
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
@@ -24,14 +25,18 @@ const Navigation = () => {
 
   return (
     <nav className="fixed top-0 w-full bg-background/80 backdrop-blur-xl border-b border-border/50 z-50 transition-all duration-300">
-      <div className="container mx-auto px-4">
+      <div className="container md:w-[80%] mx-auto px-4">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <Link
-            href="/"
-            className="text-2xl font-bold bg-gradient-primary bg-clip-text text-transparent font-playfair hover:scale-105 transition-transform duration-300"
-          >
-            RisaSol
+          <Link href="/" className="flex items-center space-x-2">
+            <Image
+              src="/WhatsApp_Image_2025-07-25_at_6.15.39_PM-removebg-preview.png"
+              alt="RISA Solutions Logo"
+              width={100}   // Adjust size as needed
+              height={40}
+              className="object-contain"
+            />
+
           </Link>
 
           {/* Desktop Navigation */}

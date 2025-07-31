@@ -196,7 +196,7 @@ const Resources = () => {
           <div className="container mx-auto text-center max-w-4xl">
             <h2 className="text-3xl font-bold mb-6">Stay Updated</h2>
             <p className="text-xl text-muted-foreground mb-8">
-              Get the latest supply chain insights and ChainFlow updates delivered to your inbox.
+              Get the latest supply chain insights and RisaSol updates delivered to your inbox.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-md mx-auto">
               <input

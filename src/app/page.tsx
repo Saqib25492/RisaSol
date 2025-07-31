@@ -13,7 +13,6 @@ const heroImage = "/images/hero-supply-chain.jpg";
 const Index = () => {
   return (
     <div className="min-h-screen bg-gradient-subtle relative">
-      <ParticlesBackground variant="stars" />
 
       <main>
         {/* Hero Section */}
@@ -26,7 +25,7 @@ const Index = () => {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div className="space-y-8 animate-fade-in">
                 <Badge variant="secondary" className="w-fit animate-scale-in animate-delay-200">
-                  🚀 Trusted by 500+ Growing Businesses
+                  🚀 Trusted by Growing Businesses
                 </Badge>
                 <h1 className="hero-title animate-fade-in-up animate-delay-300">
                   Smarter <span className="text-gradient">Supply Chains</span> for Growing Businesses
@@ -49,7 +48,7 @@ const Index = () => {
                   </div>
                   <div className="flex items-center space-x-2">
                     <CheckCircle className="w-5 h-5 text-secondary animate-bounce-gentle animate-delay-200" />
-                    <span>No setup fees</span>
+                    <span>No Initial Charges</span>
                   </div>
                 </div>
               </div>
@@ -197,7 +196,7 @@ const Index = () => {
         {/* CTA Section */}
         <section className="section-padding relative overflow-hidden">
           <div className="absolute inset-0 bg-gradient-hero"></div>
-          <div className="absolute inset-0 bg-black/20"></div>
+          <div className="absolute inset-0 bg-gradient-hero"></div>
           <div className="absolute top-1/4 left-1/3 w-96 h-96 bg-white/10 rounded-full blur-3xl animate-float"></div>
           <div className="absolute bottom-1/4 right-1/3 w-80 h-80 bg-white/5 rounded-full blur-3xl animate-float animate-delay-500"></div>
 
@@ -215,7 +214,7 @@ const Index = () => {
                     Get Started Today <ArrowRight className="ml-2 w-5 h-5" />
                   </Link>
                 </Button>
-                <Button asChild variant="outline" size="lg" className="text-lg px-10 py-6 border-white/30 text-white hover:bg-white/10 hover-lift">
+                <Button asChild variant="outline" size="lg" className="text-lg px-10 py-6 border-white/30 text-white bg-teal-800 hover:bg-white/10 hover-lift">
                   <Link href="/resources">View Case Studies</Link>
                 </Button>
               </div>
