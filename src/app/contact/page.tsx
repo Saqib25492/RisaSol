@@ -175,10 +175,12 @@ const Contact = () => {
                     <CardTitle className="text-xl">Other Ways to Connect</CardTitle>
                   </CardHeader>
                   <CardContent className="space-y-4">
+                    {/* 
                     <Button variant="outline" className="w-full justify-start">
                       <MessageSquare className="w-4 h-4 mr-2" />
                       Live Chat Support
                     </Button>
+                    */}
                     <Button variant="outline" className="w-full justify-start">
                       <Phone className="w-4 h-4 mr-2" />
                       Schedule a Call
@@ -206,7 +208,7 @@ const Contact = () => {
           </div>
         </section>
 
-        {/* FAQ Section */}
+        {/* FAQ Section 
         <section className="py-16 px-4">
           <div className="container mx-auto max-w-4xl">
             <h2 className="text-3xl font-bold text-center mb-12">Frequently Asked Questions</h2>
@@ -241,6 +243,7 @@ const Contact = () => {
             </div>
           </div>
         </section>
+        */}
       </main>
 
     </div>

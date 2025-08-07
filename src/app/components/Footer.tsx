@@ -91,11 +91,13 @@ const Footer = () => {
                   About Us
                 </Link>
               </li>
+              {/*
               <li>
                 <Link href="/resources" className="hover:text-primary transition-colors">
                   Blog
                 </Link>
               </li>
+              */}
               <li>
                 <Link href="/contact" className="hover:text-primary transition-colors">
                   Contact

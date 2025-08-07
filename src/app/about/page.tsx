@@ -30,25 +30,21 @@ const About = () => {
                 <h2 className="text-3xl font-bold mb-6">Our Mission</h2>
                 <p className="text-lg text-muted-foreground mb-6">
                   <span className="font-semibold">
-                    Founded in 2024, Risa Sol
+                    Founded in 2025, Risa Solutions 
                   </span>{" "}
-                  was built on a clear mission: supply chains are the lifeline
-                  of modern business, yet too many companies still rely on
-                  outdated tools and manual processes.
+                  began with a simple belief: while supply chains are the backbone of every business, startups and emerging companies often lack the tools and insights needed to compete effectively.
                 </p>
                 <p className="text-lg text-muted-foreground mb-6">
-                  <span className="font-semibold">Our founders</span>, with deep
-                  expertise in supply chain strategy, logistics technology, and
-                  digital transformation, saw an opportunity to make
-                  enterprise-grade supply chain intelligence accessible for
-                  growing businesses everywhere.
+                  <span className="font-semibold">Our founders</span>, Experts in supply chain strategy, logistics technology, and digital transformation, recognized the gap and set out to make enterprise-grade supply chain intelligence accessible and affordable, especially for startups and businesses struggling to manage capital or find their place in a competitive market.
                 </p>
 
+                {/*}
                 <div className="flex flex-wrap gap-2">
                   <Badge variant="secondary">Stanford Alumni</Badge>
                   <Badge variant="secondary">Y Combinator S23</Badge>
                   <Badge variant="secondary">SOC 2 Certified</Badge>
                 </div>
+                */}
               </div>
               <div className="bg-white rounded-lg shadow-elegant p-8">
                 <h3 className="text-2xl font-bold mb-4 text-center">
@@ -74,24 +70,17 @@ const About = () => {
               {[
                 {
                   name: "Ishan Gandhi",
-                  role: "CEO & Co-Founder",
+                  role: "CEO & Founder",
                   bio: "Former Amazon Supply Chain Director. Stanford MBA.",
                   image:
                     "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face",
                 },
                 {
                   name: "Rizwan Shaikh",
-                  role: "CTO & Co-Founder",
+                  role: "COO & Co-Founder",
                   bio: "Ex-FedEx Tech Lead. MIT Computer Science.",
                   image:
                     "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face",
-                },
-                {
-                  name: "Shekhar Mukesh",
-                  role: "Head of Analytics",
-                  bio: "Former SAP Principal Scientist. PhD Operations Research.",
-                  image:
-                    "https://images.unsplash.com/photo-1511367461989-f85a21fda167?w=400&h=400&fit=crop&crop=face",
                 },
               ].map((member, index) => (
                 <Card key={index} className="text-center">

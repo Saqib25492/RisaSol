@@ -31,7 +31,7 @@ const Index = () => {
                   Smarter <span className="text-gradient">Supply Chains</span> for Growing Businesses
                 </h1>
                 <p className="text-xl text-muted-foreground leading-relaxed animate-fade-in-up animate-delay-500">
-                  Transform your supply chain with AI-powered insights, real-time visibility, and intelligent automation. Reduce costs by 35% while improving service levels.
+                  Transform your supply chain with AI-powered insights, real-time visibility, and intelligent automation. Reduce costs while improving service levels.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 animate-fade-in-up animate-delay-700">
                   <Button asChild size="lg" variant="default" className="text-lg px-8 py-6 btn-glow animate-pulse-glow">
@@ -63,7 +63,7 @@ const Index = () => {
                   className="relative w-full rounded-xl shadow-elegant hover-lift"
                 />
                 <div className="absolute -bottom-6 -right-6 glass-effect p-6 rounded-lg shadow-lg animate-scale-in animate-delay-1000">
-                  <p className="text-sm font-medium text-white">35% Cost Reduction</p>
+                  <p className="text-sm font-medium text-white">Cost Reduction</p>
                   <p className="text-xs text-white/80">Average customer savings</p>
                 </div>
               </div>
@@ -79,7 +79,7 @@ const Index = () => {
                 Everything You Need to <span className="text-gradient">Optimize</span>
               </h2>
               <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-                From inventory management to predictive analytics, ChainFlow provides comprehensive tools for modern supply chain management.
+                From inventory management to predictive analytics, RisaSol provides comprehensive tools for modern supply chain management.
               </p>
             </div>
 
@@ -119,7 +119,7 @@ const Index = () => {
           </div>
         </section>
 
-        {/* Social Proof Section */}
+        {/* Social Proof Section 
         <section className="section-padding relative overflow-hidden">
           <div className="absolute inset-0 bg-gradient-hero opacity-5"></div>
           <div className="container-center relative z-10">
@@ -171,8 +171,8 @@ const Index = () => {
             </div>
           </div>
         </section>
-
-        {/* Stats Section */}
+      */}
+        {/* Stats Section 
         <section className="section-padding bg-background">
           <div className="container-center">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
@@ -192,6 +192,7 @@ const Index = () => {
             </div>
           </div>
         </section>
+        */}
 
         {/* CTA Section */}
         <section className="section-padding relative overflow-hidden">
@@ -206,7 +207,7 @@ const Index = () => {
                 Ready to Transform Your <span className="text-white">Supply Chain?</span>
               </h2>
               <p className="text-xl text-white/90 mb-12 leading-relaxed">
-                Join hundreds of companies already using ChainFlow to optimize their operations and drive growth.
+                Join hundreds of companies already using RisaSol to optimize their operations and drive growth.
               </p>
               <div className="flex flex-col sm:flex-row gap-6 justify-center animate-fade-in-up animate-delay-300">
                 <Button asChild size="lg" className="text-lg px-10 py-6 bg-white text-primary hover:bg-white/90 shadow-elegant hover-lift">
@@ -214,12 +215,14 @@ const Index = () => {
                     Get Started Today <ArrowRight className="ml-2 w-5 h-5" />
                   </Link>
                 </Button>
+                {/* 
                 <Button asChild variant="outline" size="lg" className="text-lg px-10 py-6 border-white/30 text-white bg-teal-800 hover:bg-white/10 hover-lift">
                   <Link href="/resources">View Case Studies</Link>
                 </Button>
+                */}
               </div>
               <p className="text-sm text-white/70 mt-8 animate-fade-in animate-delay-700">
-                Free 30-day trial • No setup fees • Cancel anytime
+                No initial charges • No setup fees • Cancel anytime
               </p>
             </div>
           </div>
