@@ -4,7 +4,15 @@ import ParticlesBackground from "@/app/components/particlesBackground";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { ArrowRight, Shield, Zap, BarChart3, Users, CheckCircle, Star } from "lucide-react";
+import {
+  ArrowRight,
+  Shield,
+  Zap,
+  BarChart3,
+  Users,
+  CheckCircle,
+  Star,
+} from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -13,7 +21,6 @@ const heroImage = "/images/hero-supply-chain.jpg";
 const Index = () => {
   return (
     <div className="min-h-screen bg-gradient-subtle relative">
-
       <main>
         {/* Hero Section */}
         <section className="relative pt-32 pb-20 px-4 overflow-hidden">
@@ -24,20 +31,36 @@ const Index = () => {
           <div className="container mx-auto max-w-6xl relative z-10">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div className="space-y-8 animate-fade-in">
-                <Badge variant="secondary" className="w-fit animate-scale-in animate-delay-200">
+                <Badge
+                  variant="secondary"
+                  className="w-fit animate-scale-in animate-delay-200"
+                >
                   🚀 Trusted by Growing Businesses
                 </Badge>
                 <h1 className="hero-title animate-fade-in-up animate-delay-300">
-                  Smarter <span className="text-gradient">Supply Chains</span> for Growing Businesses
+                  Smarter <span className="text-gradient">Supply Chains</span>{" "}
+                  for Growing Businesses
                 </h1>
                 <p className="text-xl text-muted-foreground leading-relaxed animate-fade-in-up animate-delay-500">
-                  Transform your supply chain with AI-powered insights, real-time visibility, and intelligent automation. Reduce costs while improving service levels.
+                  Transform your supply chain with AI-powered insights,
+                  real-time visibility, and intelligent automation. Reduce costs
+                  while improving service levels.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 animate-fade-in-up animate-delay-700">
-                  <Button asChild size="lg" variant="default" className="text-lg px-8 py-6 btn-glow animate-pulse-glow">
+                  <Button
+                    asChild
+                    size="lg"
+                    variant="default"
+                    className="text-lg px-8 py-6 btn-glow animate-pulse-glow"
+                  >
                     <Link href="/contact">Schedule a Demo</Link>
-                  </Button> 
-                  <Button asChild variant="outline" size="lg" className="text-lg px-8 py-6 hover-lift">
+                  </Button>
+                  <Button
+                    asChild
+                    variant="outline"
+                    size="lg"
+                    className="text-lg px-8 py-6 hover-lift"
+                  >
                     <Link href="/solutions">View Solutions</Link>
                   </Button>
                 </div>
@@ -63,8 +86,12 @@ const Index = () => {
                   className="relative w-full rounded-xl shadow-elegant hover-lift"
                 />
                 <div className="absolute -bottom-6 -right-6 glass-effect p-6 rounded-lg shadow-lg animate-scale-in animate-delay-1000">
-                  <p className="text-sm font-medium text-white">Cost Reduction</p>
-                  <p className="text-xs text-white/80">Average customer savings</p>
+                  <p className="text-sm font-medium text-white">
+                    Cost Reduction
+                  </p>
+                  <p className="text-xs text-white/80">
+                    Average customer savings
+                  </p>
                 </div>
               </div>
             </div>
@@ -76,10 +103,12 @@ const Index = () => {
           <div className="container-center">
             <div className="text-center mb-16 animate-fade-in">
               <h2 className="text-3xl md:text-5xl font-bold mb-6">
-                Everything You Need to <span className="text-gradient">Optimize</span>
+                Everything You Need to{" "}
+                <span className="text-gradient">Optimize</span>
               </h2>
               <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-                From inventory management to predictive analytics, RisaSol provides comprehensive tools for modern supply chain management.
+                From inventory management to predictive analytics, RisaSol
+                provides comprehensive tools for modern supply chain management.
               </p>
             </div>
 
@@ -88,17 +117,20 @@ const Index = () => {
                 {
                   icon: <BarChart3 className="w-8 h-8 text-primary" />,
                   title: "AI-Powered Analytics",
-                  description: "Make data-driven decisions with advanced analytics and machine learning insights.",
+                  description:
+                    "Make data-driven decisions with advanced analytics and machine learning insights.",
                 },
                 {
                   icon: <Zap className="w-8 h-8 text-primary" />,
                   title: "Real-Time Visibility",
-                  description: "Monitor your entire supply chain in real-time with instant alerts and notifications.",
+                  description:
+                    "Monitor your entire supply chain in real-time with instant alerts and notifications.",
                 },
                 {
                   icon: <Shield className="w-8 h-8 text-primary" />,
                   title: "Risk Management",
-                  description: "Identify and mitigate supply chain risks before they impact your business.",
+                  description:
+                    "Identify and mitigate supply chain risks before they impact your business.",
                 },
               ].map((feature, index) => (
                 <Card
@@ -107,11 +139,15 @@ const Index = () => {
                   style={{ animationDelay: `${(index + 1) * 200}ms` }}
                 >
                   <CardHeader>
-                    <div className="flex justify-center mb-4 group-hover:animate-bounce-gentle">{feature.icon}</div>
+                    <div className="flex justify-center mb-4 group-hover:animate-bounce-gentle">
+                      {feature.icon}
+                    </div>
                     <CardTitle className="text-xl">{feature.title}</CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-muted-foreground">{feature.description}</p>
+                    <p className="text-muted-foreground">
+                      {feature.description}
+                    </p>
                   </CardContent>
                 </Card>
               ))}
@@ -194,6 +230,143 @@ const Index = () => {
         </section>
         */}
 
+        {/* Marketing & Branding Intelligence */}
+        <section
+          id="marketing-branding"
+          className="relative overflow-hidden section-padding"
+        >
+          {/* soft background wash */}
+          <div className="absolute inset-0 -z-10 bg-gradient-to-b from-[hsl(var(--muted)/0.35)] via-transparent to-transparent" />
+
+          <div className="container mx-auto max-w-6xl px-4 relative z-10">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+              {/* Left: copy + mini-cards */}
+              <div className="animate-fade-in">
+                <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
+                  Marketing & Branding Intelligence
+                </h2>
+                <p className="mt-3 text-lg text-muted-foreground max-w-2xl">
+                  Translate operational strengths into clear market positioning
+                  and credible brand signals.
+                </p>
+
+                {/* Buckets */}
+                <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+                  {/* Market Positioning */}
+                  <div className="rounded-2xl border border-[hsl(var(--border))] bg-[hsl(var(--card))] p-5 shadow-sm hover-lift animate-fade-in-up">
+                    <h3 className="text-base font-semibold">
+                      Market Positioning
+                    </h3>
+                    <ul className="mt-3 space-y-2 text-sm text-muted-foreground">
+                      <li className="flex items-start gap-2">
+                        <span className="mt-1 h-1.5 w-1.5 rounded-full bg-primary inline-block" />
+                        ICP & segments
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="mt-1 h-1.5 w-1.5 rounded-full bg-primary inline-block" />
+                        Messaging map
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="mt-1 h-1.5 w-1.5 rounded-full bg-primary inline-block" />
+                        Competitive snapshot
+                      </li>
+                    </ul>
+                  </div>
+
+                  {/* Brand System */}
+                  <div className="rounded-2xl border border-[hsl(var(--border))] bg-[hsl(var(--card))] p-5 shadow-sm hover-lift animate-fade-in-up animate-delay-200">
+                    <h3 className="text-base font-semibold">Brand System</h3>
+                    <ul className="mt-3 space-y-2 text-sm text-muted-foreground">
+                      <li className="flex items-start gap-2">
+                        <span className="mt-1 h-1.5 w-1.5 rounded-full bg-primary inline-block" />
+                        Visual identity starter kit
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="mt-1 h-1.5 w-1.5 rounded-full bg-primary inline-block" />
+                        Voice & tone
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="mt-1 h-1.5 w-1.5 rounded-full bg-primary inline-block" />
+                        Website messaging
+                      </li>
+                    </ul>
+                  </div>
+
+                  {/* GTM Ops */}
+                  <div className="rounded-2xl border border-[hsl(var(--border))] bg-[hsl(var(--card))] p-5 shadow-sm hover-lift animate-fade-in-up animate-delay-300">
+                    <h3 className="text-base font-semibold">GTM Ops</h3>
+                    <ul className="mt-3 space-y-2 text-sm text-muted-foreground">
+                      <li className="flex items-start gap-2">
+                        <span className="mt-1 h-1.5 w-1.5 rounded-full bg-primary inline-block" />
+                        Landing flow
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="mt-1 h-1.5 w-1.5 rounded-full bg-primary inline-block" />
+                        Content plan (3–5)
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="mt-1 h-1.5 w-1.5 rounded-full bg-primary inline-block" />
+                        Launch checklist
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              {/* Right: visual + mini checklist */}
+              <div className="relative animate-fade-in-up lg:animate-delay-200">
+                {/* glow */}
+                <div className="absolute -inset-6 -z-10 rounded-3xl blur-3xl opacity-40 bg-[radial-gradient(45rem_30rem_at_40%_20%,hsl(var(--primary)/0.35),transparent)]" />
+
+                {/* Illustration container (replace image as needed) */}
+                <div className="aspect-[4/3] w-full overflow-hidden rounded-3xl border border-[hsl(var(--border))] bg-[hsl(var(--card))] shadow-elegant hover-lift">
+                  <Image
+                    src="/images/M_Section.png"
+                    alt="Marketing and Branding Intelligence illustration"
+                    width={600}
+                    height={450}
+                    className="w-full h-auto object-contain"
+                  />
+                </div>
+
+                {/* Overlapping mini card */}
+                <div className="w-full max-w-xs rounded-2xl border border-[hsl(var(--border))] bg-[hsl(var(--popover))] p-4 shadow-lg -mt-6 ml-auto mr-2 animate-fade-in-up">
+                  <div className="text-sm font-semibold">
+                    Deliverables (2–3 weeks)
+                  </div>
+                  <ul className="mt-3 space-y-2 text-sm text-muted-foreground">
+                    <li className="flex items-start gap-2">
+                      <span className="mt-1 h-1.5 w-1.5 rounded-full bg-primary inline-block" />
+                      Positioning & messaging brief
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="mt-1 h-1.5 w-1.5 rounded-full bg-primary inline-block" />
+                      Visual identity starter kit
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="mt-1 h-1.5 w-1.5 rounded-full bg-primary inline-block" />
+                      Launch checklist
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Motion safety */}
+          <style jsx>{`
+            @media (prefers-reduced-motion: reduce) {
+              #marketing-branding .animate-fade-in,
+              #marketing-branding .animate-fade-in-up {
+                animation: none !important;
+              }
+              #marketing-branding .hover-lift {
+                transform: none !important;
+              }
+            }
+          `}</style>
+        </section>
+
         {/* CTA Section */}
         <section className="section-padding relative overflow-hidden">
           <div className="absolute inset-0 bg-gradient-hero"></div>
@@ -204,13 +377,19 @@ const Index = () => {
           <div className="container mx-auto text-center max-w-4xl relative z-10">
             <div className="animate-fade-in-up">
               <h2 className="text-4xl md:text-6xl font-bold mb-6 text-white">
-                Ready to Transform Your <span className="text-white">Supply Chain?</span>
+                Ready to Transform Your{" "}
+                <span className="text-white">Supply Chain?</span>
               </h2>
               <p className="text-xl text-white/90 mb-12 leading-relaxed">
-                Join hundreds of companies already using RisaSol to optimize their operations and drive growth.
+                Join hundreds of companies already using RisaSol to optimize
+                their operations and drive growth.
               </p>
               <div className="flex flex-col sm:flex-row gap-6 justify-center animate-fade-in-up animate-delay-300">
-                <Button asChild size="lg" className="text-lg px-10 py-6 bg-white text-primary hover:bg-white/90 shadow-elegant hover-lift">
+                <Button
+                  asChild
+                  size="lg"
+                  className="text-lg px-10 py-6 bg-white text-primary hover:bg-white/90 shadow-elegant hover-lift"
+                >
                   <Link href="/contact">
                     Get Started Today <ArrowRight className="ml-2 w-5 h-5" />
                   </Link>
