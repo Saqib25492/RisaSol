@@ -53,9 +53,12 @@ const Navigation = () => {
                 {item.name}
               </Link>
             ))}
+
+            {/* 
             <Button asChild className="bg-gradient-primary hover:opacity-90 hover-lift btn-glow">
               <Link href="/contact">Get Demo</Link>
             </Button>
+            */}
           </div>
 
           {/* Mobile Navigation Toggle */}
@@ -82,11 +85,13 @@ const Navigation = () => {
                   {item.name}
                 </Link>
               ))}
+              {/*
               <Button asChild className="bg-gradient-primary w-fit">
                 <Link href="/contact" onClick={() => setIsOpen(false)}>
                   Get Demo
                 </Link>
               </Button>
+              */}
             </div>
           </div>
         )}

@@ -230,7 +230,12 @@ const Index = () => {
         </section>
         */}
 
-        {/* Marketing & Branding Intelligence */}
+
+         
+
+        
+        {/* Marketing & Branding Section */}
+        {false && ( 
         <section
           id="marketing-branding"
           className="relative overflow-hidden section-padding"
@@ -366,6 +371,7 @@ const Index = () => {
             }
           `}</style>
         </section>
+      )}
 
         {/* CTA Section */}
         <section className="section-padding relative overflow-hidden">

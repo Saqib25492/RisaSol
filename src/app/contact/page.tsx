@@ -137,7 +137,7 @@ const Contact = () => {
                           href="mailto:ishan.gandhi@risasol.com"
                           className="text-muted-foreground hover:underline focus:outline-none"
                         >
-                          ishan.gandhi@risasol.com
+                          info@risasol.com
                         </a>
                       </div>
                     </div>
@@ -145,7 +145,7 @@ const Contact = () => {
                       <Phone className="w-5 h-5 text-primary" />
                       <div>
                         <p className="font-medium">Phone</p>
-                        <p className="text-muted-foreground">+1 (555) 123-4567</p>
+                        <p className="text-muted-foreground">+1-815-328-9945</p>
                       </div>
                     </div>
                     <div className="flex items-center space-x-3">
@@ -153,8 +153,7 @@ const Contact = () => {
                       <div>
                         <p className="font-medium">Address</p>
                         <p className="text-muted-foreground">
-                          123 Innovation Drive<br />
-                          San Francisco, CA 94105
+                          Chicago, IL
                         </p>
                       </div>
                     </div>
@@ -163,24 +162,26 @@ const Contact = () => {
                       <div>
                         <p className="font-medium">Business Hours</p>
                         <p className="text-muted-foreground">
-                          Mon-Fri: 9:00 AM - 6:00 PM PST
+                          Mon-Fri: 8:00 AM - 5:00 PM CST
                         </p>
                       </div>
                     </div>
                   </CardContent>
                 </Card>
 
+
+                {/* Other Contact Methods 
                 <Card>
                   <CardHeader>
                     <CardTitle className="text-xl">Other Ways to Connect</CardTitle>
                   </CardHeader>
                   <CardContent className="space-y-4">
-                    {/* 
+                    
                     <Button variant="outline" className="w-full justify-start">
                       <MessageSquare className="w-4 h-4 mr-2" />
                       Live Chat Support
                     </Button>
-                    */}
+                    
                     <Button variant="outline" className="w-full justify-start">
                       <Phone className="w-4 h-4 mr-2" />
                       Schedule a Call
@@ -203,6 +204,7 @@ const Contact = () => {
                     </Button>
                   </CardContent>
                 </Card>
+                */}
               </div>
             </div>
           </div>

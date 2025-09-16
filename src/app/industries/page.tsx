@@ -125,9 +125,9 @@ const Industries = () => {
         <section className="py-16 px-4">
           <div className="container mx-auto max-w-6xl">
             <h2 className="text-3xl font-bold text-center mb-12">Proven Results Across Industries</h2>
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
               {[
-                { number: "500+", label: "Companies Served" },
+                
                 { number: "35%", label: "Average Cost Reduction" },
                 { number: "99.5%", label: "System Uptime" },
                 { number: "24/7", label: "Support Available" }
@@ -154,9 +154,11 @@ const Industries = () => {
               <Button asChild size="lg" className="bg-gradient-primary">
                 <Link href="/contact">Schedule Industry Consultation</Link>
               </Button>
+              {/*
               <Button asChild variant="outline" size="lg">
                 <Link href="/resources">Download Industry Reports</Link>
               </Button>
+              */}
             </div>
           </div>
         </section>

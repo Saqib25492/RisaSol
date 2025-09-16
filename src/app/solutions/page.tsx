@@ -139,7 +139,7 @@ const Solutions = () => {
           </div>
         </section>
 
-        {/* CTA Section */}
+        {/* CTA Section 
         <section className="py-16 px-4 bg-background">
           <div className="container mx-auto text-center max-w-4xl">
             <h2 className="text-3xl font-bold mb-6">Ready to Transform Your Supply Chain?</h2>
@@ -150,12 +150,15 @@ const Solutions = () => {
               <Button asChild size="lg" className="bg-gradient-primary">
                 <Link href="/contact">Get Started Today</Link>
               </Button>
+              
+              
               <Button asChild variant="outline" size="lg">
                 <Link href="/resources">View Case Studies</Link>
               </Button>
             </div>
           </div>
         </section>
+        */}
       </main>
 
 
