@@ -344,7 +344,7 @@ const Index = () => {
                   className="text-lg px-10 py-6 bg-white text-primary hover:bg-white/90 shadow-elegant hover-lift"
                 >
                   {/* Replace with your real email */}
-                  <Link href="mailto:hello@yourdomain.com">
+                  <Link href="info@rissol.com>
                     Email Us <ArrowRight className="ml-2 w-5 h-5" />
                   </Link>
                 </Button>
